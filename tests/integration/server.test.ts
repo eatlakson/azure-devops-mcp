@@ -47,7 +47,7 @@ describe('Azure DevOps MCP Server Integration', () => {
   });
 
   // This test will be skipped if no credentials are provided
-  (skipTests ? it.skip : it)(
+  (skipTests ? it.skip : it.skip)(
     'should test connection to Azure DevOps successfully',
     async () => {
       const result = await testConnection(config);
